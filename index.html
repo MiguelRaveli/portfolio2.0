@@ -33,7 +33,7 @@
         <div class="cargoImg"></div>
         <div class="cargoButtons">
           <div class="imgMusicIcon"></div>
-          <button class="hireMeButton poppins-bold">Contrate-me</button>
+          <a href="#HireMe" class="hireMeButton poppins-bold">Contrate-me</a>
           <button class="downloadCVButton poppins-bold">
             Baixar CV <span class="iconDownload"></span>
           </button>
@@ -58,8 +58,8 @@
           compreensão do usuário, responsividade e gerenciamento de dados.
           Minhas habilidades incluem
           <span class="poppins-bold"
-            >React.js, HMTL5, CSS3, JavaScript,TypeScript, Git e GitHub, GraphQL e
-            Node.js.</span
+            >React.js, HMTL5, CSS3, JavaScript,TypeScript, Git e GitHub, GraphQL
+            e Node.js.</span
           >
         </p>
         <div class="aboutMeManImg"></div>
@@ -72,8 +72,47 @@
         <span class="titleAboutLeft textColorWhite">Meus</span>
         <span class="titleAboutRight textColorBlue">Projetos</span>
       </h1>
+
+      <div class="ContainerProjects">
+        <div class="project">
+          <div class="ProjectImg"></div>
+          <div class="projectButtons">
+            <a href="" class="projectButtonBlue poppins-regular">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="line2"></div>
     </section>
-    <section id="HireMe"></section>
+    <section id="HireMe">
+      <h1 class="titleAbout poppins-bold">
+        <div class="imgArrowIcon"></div>
+        <span class="titleAboutLeft textColorWhite">Eaí, se</span>
+        <span class="titleAboutRight textColorBlue">interessou?</span>
+        <span style="font-size: 1em" class="titleAboutRight textColorWhite"
+          >Envie uma mensagem</span
+        >
+      </h1>
+      <form class="sendAMessage poppins-bold">
+        <label for="fname">Seu nome</label>
+        <input type="text" id="fname" name="fname" placeholder="Nome" />
+        <label for="lname">Seu email</label>
+        <input type="email" id="lname" name="lname" placeholder="Email" />
+        <label for="lmessage">Sua mensagem</label>
+        <textarea
+          placeholder="Mensagem"
+          name="tamessage"
+          id="tamessage"
+        ></textarea>
+        <div class="buttonSendContainer">
+          <button
+            class="buttonSendMessage poppins-bold projectButtonBlue"
+            type="submit"
+          >
+            Enviar <span class="iconSend"></span>
+          </button>
+        </div>
+      </form>
+    </section>
   </body>
   <footer></footer>
   <script src="script.js"></script>

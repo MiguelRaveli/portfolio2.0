@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +17,7 @@ header a {
   text-decoration: none;
 }
 
-.textColorWhite{
+.textColorWhite {
   color: #eeeeee;
 }
 
@@ -39,6 +43,11 @@ header a {
   background: url("./imgs/icons/download.svg") no-repeat center center;
 }
 
+.iconSend {
+  background: url("imgs/icons/send.svg") no-repeat center center;
+  background-size: cover;
+}
+
 .downloadCVButton {
   background-color: #393e46;
   color: #eeeeee;
@@ -47,7 +56,16 @@ header a {
   align-items: center;
   text-shadow: 1px 3px 5px #222831;
 }
-
+.projectButtonGray {
+  background-color: #393e46;
+  color: #eeeeee;
+  text-shadow: 1px 3px 5px #222831;
+}
+.projectButtonBlue {
+  background-color: #00adb5;
+  color: #eeeeee;
+  text-shadow: 1px 3px 5px #222831;
+}
 .hireMeButton {
   background-color: #00adb5;
   color: #eeeeee;
@@ -88,15 +106,33 @@ header a {
   background: url("imgs/man/Group\ 62.svg") no-repeat center center;
 }
 
-.imgArrowIcon{
+.imgArrowIcon {
   background: url("imgs/backgrounds/Vector\ 187.svg") no-repeat center center;
+}
+
+.sendAMessage {
+  color: #eeeeee;
+}
+
+.sendAMessage input,
+textarea,
+button {
+  background-color: #393e46;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: #eeeeee;
+  outline: none;
+}
+
+.sendAMessage textarea {
+  resize: none;
 }
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
   .logo {
     width: 100vw;
     height: 200px;
-    background: #ffffff url("../imgs/Logotipo.png") no-repeat center top;
+    background: url("imgs/Logotipo.png") no-repeat center top;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -150,15 +186,22 @@ header a {
     text-align: center;
   }
 
-  .cargoButtons button {
+  .cargoButtons button,
+  a {
     text-align: center;
     align-content: center;
     padding: 10px;
     border-radius: 20px;
     border: none;
     width: 130px;
+    text-decoration: none;
   }
   .iconDownload {
+    height: 20px;
+    width: 20px;
+    display: block;
+  }
+  .iconSend {
     height: 20px;
     width: 20px;
     display: block;
@@ -175,6 +218,7 @@ header a {
   .goDownPage {
     width: 50px;
     height: 50px;
+    border-radius: 5px;
   }
 
   .titleAbout {
@@ -221,13 +265,90 @@ header a {
     margin-right: 20px;
   }
 
-  .imgArrowIcon{
+  .imgArrowIcon {
     width: 80px;
     height: 200px;
     position: absolute;
     top: 210%;
     left: 1%;
-   transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  .ContainerProjects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 15px;
+  }
+
+  .project {
+    width: 100%;
+    height: 350px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #393e4641;
+  }
+
+  .ProjectImg {
+    width: 90%;
+    height: 70%;
+    background: url("https://placehold.co/320x320/png") no-repeat center center;
+  }
+
+  .projectButtons a {
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    text-decoration: none;
+  }
+
+  .sendAMessage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 0.3em;
+    padding: 10px;
+  }
+
+  .sendAMessage input {
+    padding: 10px;
+    width: 100%;
+  }
+  .sendAMessage textarea {
+    height: 200px;
+    padding: 10px;
+  }
+  .buttonSendMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+    text-decoration: none;
+
+  }
+
+  .buttonSendContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
   }
 }
 @media (min-width: 480px) {
