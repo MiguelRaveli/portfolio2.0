@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,20 +13,22 @@ header a {
   text-decoration: none;
 }
 
-.title_up {
+.title_up,
+.titleAboutLeft {
   color: #eeeeee;
 }
 
-.title_down {
+.title_down,
+.titleAboutRight {
   color: #00adb5;
 }
 
 .titleImg {
-  background: url("../imgs/backgrounds/doodles\ mixed\ round.svg") no-repeat
+  background: url("./imgs/backgrounds/doodles\ mixed\ round.svg") no-repeat
     center center;
 }
 .cargoImg {
-  background: url("../imgs/man/Group\ 2345.svg") no-repeat center center;
+  background: url("./imgs/man/Group\ 2345.svg") no-repeat center center;
 }
 .cargoButtons {
   display: flex;
@@ -32,7 +38,7 @@ header a {
 }
 
 .iconDownload {
-  background: url("../imgs/icons/download.svg") no-repeat center center;
+  background: url("./imgs/icons/download.svg") no-repeat center center;
 }
 
 .downloadCVButton {
@@ -48,6 +54,32 @@ header a {
   background-color: #00adb5;
   color: #eeeeee;
   text-shadow: 1px 3px 5px #222831;
+}
+
+.goDownPage {
+  background: url("./imgs/icons/Frame\ 7.svg") no-repeat center center;
+}
+
+.line2 {
+  background: url("./imgs/backgrounds/Line\ 2.svg") no-repeat center center;
+}
+
+.line1 {
+  background: url("imgs/backgrounds/Line\ 1.svg") no-repeat center center;
+}
+
+.imgMusicIcon {
+  background: url("imgs/backgrounds/Vector\ 141.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.imgLightIcon {
+  background: url("imgs/backgrounds/lightbulb.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.aboutMeText{
+  color: #eeeeee;
 }
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
@@ -66,6 +98,16 @@ header a {
     justify-content: center;
     align-items: center;
     justify-content: space-around;
+  }
+  .line1 {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 5%;
+  }
+  .line2 {
+    width: 100%;
+    height: 10px;
   }
   .title {
     padding: 10px;
@@ -110,6 +152,52 @@ header a {
     height: 20px;
     width: 20px;
     display: block;
+  }
+  .goDownPageContainer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .goDownPage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .titleAbout {
+    text-align: center;
+  }
+  .titleAboutLeft {
+    font-size: 2em;
+  }
+
+  .titleAboutRight {
+    font-size: 2em;
+  }
+
+  .imgMusicIcon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 97%;
+    left: 10%;
+  }
+
+  .imgLightIcon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 119%;
+    right: 5%;
+  }
+
+  .aboutMeText{
+    text-indent: 5px;
+    text-align: justify;
+    padding: 10px;
   }
 }
 @media (min-width: 480px) {
