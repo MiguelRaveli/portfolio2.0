@@ -11,47 +11,52 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
   </head>
-  <header>
-    <div class="logo"></div>
-    <div class="AnchorLinks poppins-regular">
-      <a href="#About"><p>Sobre</p></a>
-      <a href="#Projects"> <p>Projetos</p></a>
-      <a href=""> <p>Contato</p></a>
+  <header id="Home" class="hidden">
+    <div class="headerContainer">
+      <div class="logo"></div>
+      <div class="AnchorLinks poppins-regular">
+        <a href="#About"><p>Sobre</p></a>
+        <a href="#Projects"> <p>Projetos</p></a>
+        <a href=""> <p>Contato</p></a>
+      </div>
     </div>
-    <div class="line2"></div>
   </header>
   <body>
-    <section id="Home">
-      <div class="titleImg"></div>
-      <h1 class="title poppins-bold">
-        <span class="title_up textColorWhite">Desenvolvedor</span>
-        <span class="title_down textColorBlue">Front-End</span>
-      </h1>
-      <div class="Cargo">
-        <div class="cargoImg"></div>
-        <div class="cargoButtons">
-          <div class="imgMusicIcon"></div>
-          <a href="#HireMe" class="hireMeButton poppins-bold">Contrate-me</a>
-          <button class="downloadCVButton poppins-bold">
-            Baixar CV <span class="iconDownload"></span>
-          </button>
+    <section id="HomeSection" class="hidden">
+      <div class="HomeContainer">
+        <div class="titleContainer">
+          <div class="titleImg"></div>
+          <h1 class="title poppins-bold">
+            <span class="textColorWhite">Desenvolvedor</span><br />
+            <span class="textColorBlue">Front-End</span>
+          </h1>
+          <div class="titleButtons">
+            <a href="#HireMe" class="textColorBlueWithShadow poppins-semibold"
+              >Contrate-me</a
+            >
+            <button class="textColorGrayWithShadow poppins-bold">
+              Baixar CV <span class="iconDownload"></span>
+            </button>
+          </div>
+          <a href="#About" class="iconDownPage"></a>
         </div>
-        <div class="goDownPageContainer">
-          <a href="#About" class="goDownPage"></a>
+        <div class="Cargo">
+          <div class="cargoImg"></div>
         </div>
       </div>
     </section>
-    <section id="About">
-      <div class="aboutImg">
-        <div class="imgLightIcon"></div>
+    <section id="About" class="hidden">
+      
+      <div class="aboutContainer">
+        <a href="#Home" class="iconDownPage"></a>
         <h1 class="titleAbout poppins-bold">
-          <span class="titleAboutLeft textColorWhite">Sobre</span>
-          <span class="titleAboutRight textColorBlue">Mim</span>
+          <span class="textColorWhite">Sobre</span>
+          <span class="textColorBlue">Mim</span>
         </h1>
-        <p class="aboutMeText poppins-regular">
-          Sou um
+        <p class="textColorWhite poppins-regular">
+          Olá, me chamo Miguel Raveli e eu sou um
           <span class="textColorBlue">Desenvolvedor Front-End </span>
           apaixonado por desenvolver sites funcionais e acessíveis. Minhas
           competências englobam conceitos de design de interface do usuário,
@@ -62,18 +67,19 @@
             e Node.js.</span
           >
         </p>
-        <div class="aboutMeManImg"></div>
+        <a href="#Projects" class="iconDownPage"></a>
       </div>
+      <div class="aboutMeManImg"></div>
       <div class="line2"></div>
     </section>
     <section id="Projects">
-      <h1 class="titleAbout poppins-bold">
+      <h1 class="hidden myProjectsTitle poppins-bold">
         <div class="imgArrowIcon"></div>
         <span class="titleAboutLeft textColorWhite">Meus</span>
         <span class="titleAboutRight textColorBlue">Projetos</span>
       </h1>
 
-      <div class="ContainerProjects">
+      <div class="hidden ContainerProjects">
         <div class="project">
           <div class="ProjectImg"></div>
           <div class="projectButtons">
@@ -83,25 +89,41 @@
       </div>
       <div class="line2"></div>
     </section>
-    <section id="HireMe">
-      <h1 class="titleAbout poppins-bold">
-        <div class="imgArrowIcon"></div>
-        <span class="titleAboutLeft textColorWhite">Eaí, se</span>
-        <span class="titleAboutRight textColorBlue">interessou?</span>
-        <span style="font-size: 1em" class="titleAboutRight textColorWhite"
-          >Envie uma mensagem</span
-        >
+    <section id="HireMe" class="hidden">
+      <h1 class="hireMeTitle poppins-bold">
+        <span class="titleHireMeUp textColorWhite">Eaí, se</span>
+        <span class="titleHireMeUp textColorBlue">interessou?</span>
       </h1>
-      <form class="sendAMessage poppins-bold">
+      <div class="sendAMessageText">
+        <span class="poppins-regular">Envie uma mensagem</span>
+      </div>
+
+      <form id="contact-form" class="sendAMessage poppins-bold">
         <label for="fname">Seu nome</label>
-        <input type="text" id="fname" name="fname" placeholder="Nome" />
+        <input
+          class="inputsContactForm"
+          type="text"
+          id="fname"
+          name="name"
+          placeholder="Nome"
+          required
+        />
         <label for="lname">Seu email</label>
-        <input type="email" id="lname" name="lname" placeholder="Email" />
+        <input
+          class="inputsContactForm"
+          type="email"
+          id="lname"
+          name="email"
+          placeholder="Email"
+          required
+        />
         <label for="lmessage">Sua mensagem</label>
         <textarea
+          class="inputsContactForm"
           placeholder="Mensagem"
-          name="tamessage"
+          name="message"
           id="tamessage"
+          required
         ></textarea>
         <div class="buttonSendContainer">
           <button
@@ -112,8 +134,30 @@
           </button>
         </div>
       </form>
+      <div class="line2"></div>
     </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
   </body>
-  <footer></footer>
-  <script src="script.js"></script>
+  <footer>
+    <div class="footerAnchorLinks poppins-regular">
+      <a href="#Home"
+        ><span class="iconHome"></span>
+        <p>Home</p></a
+      >
+      <a href="#About"
+        ><span class="iconAbout"></span>
+        <p>Sobre</p></a
+      >
+      <a href=""
+        ><span class="iconContact"></span>
+        <p>Contato</p></a
+      >
+    </div>
+
+    <div class="socialMedias">
+      <a href class="GitHubIcon"></a>
+      <a class="LinkedinIcon"></a>
+    </div>
+  </footer>
 </html>

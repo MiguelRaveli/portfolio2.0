@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #222831;
+  /* overflow: hidden; */
 }
 
 header a {
@@ -25,98 +26,23 @@ header a {
   color: #00adb5;
 }
 
-.titleImg {
-  background: url("./imgs/backgrounds/doodles\ mixed\ round.svg") no-repeat
-    center center;
-}
-.cargoImg {
-  background: url("./imgs/man/Group\ 2345.svg") no-repeat center center;
-}
-.cargoButtons {
-  display: flex;
-  padding: 10px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.iconDownload {
-  background: url("./imgs/icons/download.svg") no-repeat center center;
-}
-
-.iconSend {
-  background: url("imgs/icons/send.svg") no-repeat center center;
-  background-size: cover;
-}
-
-.downloadCVButton {
-  background-color: #393e46;
-  color: #eeeeee;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-shadow: 1px 3px 5px #222831;
-}
-.projectButtonGray {
+.textColorGrayWithShadow {
   background-color: #393e46;
   color: #eeeeee;
   text-shadow: 1px 3px 5px #222831;
+  border: none;
 }
-.projectButtonBlue {
+
+.textColorBlueWithShadow {
   background-color: #00adb5;
   color: #eeeeee;
   text-shadow: 1px 3px 5px #222831;
+  border: none;
 }
-.hireMeButton {
-  background-color: #00adb5;
-  color: #eeeeee;
-  text-shadow: 1px 3px 5px #222831;
-}
-
-.goDownPage {
-  background: url("./imgs/icons/Frame\ 7.svg") no-repeat center center;
-}
-
-.line2 {
-  background: url("./imgs/backgrounds/Line\ 2.svg") no-repeat center center;
-}
-
-.line1 {
-  background: url("imgs/backgrounds/Line\ 1.svg") no-repeat center center;
-}
-
-.imgMusicIcon {
-  background: url("imgs/backgrounds/Vector\ 141.svg") no-repeat center center;
-  background-size: contain;
-}
-
-.imgLightIcon {
-  background: url("imgs/backgrounds/lightbulb.svg") no-repeat center center;
-  background-size: contain;
-}
-
-.aboutMeText {
+.textColorWhite {
   color: #eeeeee;
 }
-
-.aboutImg {
-  background: url("imgs/backgrounds/doodle\ items.svg") repeat center center;
-}
-
-.aboutMeManImg {
-  background: url("imgs/man/Group\ 62.svg") no-repeat center center;
-}
-
-.imgArrowIcon {
-  background: url("imgs/backgrounds/Vector\ 187.svg") no-repeat center center;
-}
-
-.sendAMessage {
-  color: #eeeeee;
-}
-
-.sendAMessage input,
-textarea,
-button {
+.textColorWhiteBackGray {
   background-color: #393e46;
   border: none;
   font-family: "Poppins", sans-serif;
@@ -124,247 +50,798 @@ button {
   outline: none;
 }
 
-.sendAMessage textarea {
+.iconDownload {
+  background: url("./imgs/icons/download.svg") no-repeat center center;
+  transition: all 0.3s;
+}
+.iconSend {
+  background: url("imgs/icons/send.svg") no-repeat center center;
+}
+.iconHome {
+  background: url("imgs/icons/home.svg") no-repeat center center;
+}
+.iconAbout {
+  background: url("imgs/icons/user.svg") no-repeat center center;
+}
+.iconContact {
+  background: url("imgs/icons/phone.svg") no-repeat center center;
+}
+
+.iconDownPage {
+  background: url("./imgs/icons/Frame\ 7.svg") no-repeat center center;
+}
+
+.iconArrow {
+  background: url("imgs/backgrounds/Vector\ 187.svg") no-repeat center center;
+}
+.iconGitHub {
+  background: #eeeeee
+    url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+
+.iconLinkedin {
+  background: #00adb5
+    url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+.line2 {
+  background: url("./imgs/backgrounds/Line\ 2.svg") no-repeat center center;
+}
+
+textarea {
   resize: none;
 }
-@media (min-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  .logo {
+
+.hidden {
+  opacity: 0%;
+  filter: blur(15px);
+  transition: all 0.8s;
+}
+
+.show {
+  opacity: 100%;
+  filter: blur(0);
+  transition: all 0.8s;
+}
+.titleButtons a,
+button {
+  transition: all 0.3s;
+}
+.titleButtons a:hover {
+  background-color: #eeeeee;
+  color: #00adb5;
+  text-shadow: none;
+  transform: scale(1.05) translateY(-10px);
+  cursor: pointer;
+}
+
+.titleButtons button:hover {
+  background-color: #eeeeee;
+  color: #393e46;
+  text-shadow: none;
+  transform: scale(1.05) translateY(-10px);
+  cursor: pointer;
+}
+
+.titleButtons button:hover > .iconDownload {
+  background: url("imgs/icons/download\ \(1\).svg") no-repeat center center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Header */
+  .headerContainer {
     width: 100vw;
-    height: 200px;
-    background: url("imgs/Logotipo.png") no-repeat center top;
-    background-size: cover;
+    height: 25vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: solid 1px #393e46;
+  }
+  .logo {
+    background: url("imgs/Logotipo.png") no-repeat center center;
+    background-size: cover;
+
+    width: 70%;
+    height: 80%;
   }
 
   .AnchorLinks {
     display: flex;
-    justify-content: center;
-    align-items: center;
     justify-content: space-around;
-  }
-  .line1 {
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    left: 5%;
-  }
-  .line2 {
-    width: 100%;
-    height: 10px;
-  }
-  .title {
-    padding: 10px;
-    position: absolute;
-    top: 38%;
-    text-align: center;
-  }
-  .title_up {
-    width: 100vw;
-    text-wrap: wrap;
-    font-size: 1.5em;
-  }
-  .title_down {
-    width: 100vw;
-    text-wrap: wrap;
-    font-size: 2em;
-  }
-
-  .titleImg {
-    height: 300px;
-    background-size: contain;
-    align-content: center;
-    text-align: center;
-  }
-
-  .cargoImg {
-    height: 300px;
-    background-size: contain;
-    align-content: center;
-    text-align: center;
-  }
-
-  .cargoButtons button,
-  a {
-    text-align: center;
-    align-content: center;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    width: 130px;
-    text-decoration: none;
-  }
-  .iconDownload {
-    height: 20px;
-    width: 20px;
-    display: block;
-  }
-  .iconSend {
-    height: 20px;
-    width: 20px;
-    display: block;
-  }
-  .goDownPageContainer {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .goDownPage {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-  }
-
-  .titleAbout {
-    text-align: center;
-  }
-  .titleAboutLeft {
-    font-size: 2em;
-  }
-
-  .titleAboutRight {
-    font-size: 2em;
-  }
-
-  .imgMusicIcon {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 97%;
-    left: 10%;
-  }
-
-  .imgLightIcon {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 119%;
-    right: 5%;
-  }
-
-  .aboutMeText {
-    text-indent: 5px;
-    text-align: justify;
-    padding: 10px;
-    backdrop-filter: blur(3px);
-  }
-  .aboutImg {
     width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-  }
-  .aboutMeManImg {
-    height: 300px;
-    background-size: contain;
-    margin-right: 20px;
+    height: 20%;
   }
 
-  .imgArrowIcon {
-    width: 80px;
-    height: 200px;
-    position: absolute;
-    top: 210%;
-    left: 1%;
-    transform: rotate(25deg);
-  }
+  /* ---------------------------------------------- */
 
-  .ContainerProjects {
-    width: 100%;
+  /* Body Section Home */
+
+  #HomeSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    padding: 15px;
+    align-items: center;
+    width: 100vw;
+  }
+  .HomeContainer {
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .project {
+  .titleContainer {
     width: 100%;
-    height: 350px;
+    min-height: 40vh;
     max-height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    background-color: #393e4641;
+    background: url("imgs/backgrounds/Vector\ 186.svg") no-repeat 30% 90%;
+    background-size: 50px;
+  }
+  .title {
+    text-align: center;
+    width: auto;
   }
 
-  .ProjectImg {
-    width: 90%;
-    height: 70%;
-    background: url("https://placehold.co/320x320/png") no-repeat center center;
+  .title span {
+    font-size: 150%;
   }
 
-  .projectButtons a {
+  .titleButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+  }
+  .titleButtons a,
+  button {
+    font-size: 120%;
+    padding: 10px;
+    width: 35%;
+    height: 100%;
     text-align: center;
     align-content: center;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    width: 150px;
+    border-radius: 30px;
     text-decoration: none;
   }
 
-  .sendAMessage {
-    width: 100%;
+  .titleButtons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconDownload {
+    width: 20%;
+    height: 100%;
+  }
+  .iconDownPage {
+    width: 15%;
+    height: 7vh;
+    background-size: contain;
+  }
+  .Cargo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    gap: 0.3em;
+    align-items: center;
+    width: 100vw;
+    height: auto;
     padding: 10px;
+    background: url("imgs/backgrounds/doodles\ mixed\ round.svg") no-repeat
+      center center;
+    background-size: contain;
+  }
+  .cargoImg {
+    background: url("imgs/man/Group\ 2345.svg") no-repeat center center;
+    background-size: contain;
+    width: 100vw;
+    height: 30vh;
+  }
+  /* ---------------------------------------------- */
+
+  /* About Section */
+
+  #About {
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
   }
 
-  .sendAMessage input {
-    padding: 10px;
-    width: 100%;
-  }
-  .sendAMessage textarea {
-    height: 200px;
-    padding: 10px;
-  }
-  .buttonSendMessage {
+  .aboutContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .titleAbout {
+    font-size: 300%;
+    background: url("imgs/backgrounds/lightbulb.svg") no-repeat 80% center;
+    background-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutContainer p {
+    width: 80%;
+    text-indent: 20px;
+    text-align: justify;
+  }
+
+  .aboutMeManImg {
+    background: url("imgs/backgrounds/Component\ 1.svg") no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 50%;
+  }
+
+  /* ---------------------------------------------- */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Header */
+  .headerContainer {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #393e46;
+  }
+  .logo {
+    background: url("imgs/Logotipo.png") no-repeat center center;
+    background-size: cover;
+
+    width: 60%;
+    height: 80%;
+  }
+
+  .AnchorLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+  }
+  /* ---------------------------------------------- */
+  /* Body Section Home */
+
+  #HomeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .HomeContainer {
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleContainer {
+    width: 100%;
+    min-height: 40vh;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("imgs/backgrounds/Vector\ 186.svg") no-repeat 30% 90%;
+    background-size: 50px;
+  }
+  .title {
+    text-align: center;
+    width: auto;
+  }
+
+  .title span {
+    font-size: 150%;
+  }
+
+  .titleButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+  }
+  .titleButtons a,
+  button {
+    font-size: 120%;
+    padding: 10px;
+    width: 35%;
+    height: 100%;
     text-align: center;
     align-content: center;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    width: 200px;
+    border-radius: 30px;
     text-decoration: none;
-
   }
 
-  .buttonSendContainer {
-    width: 100%;
+  .titleButtons button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+  }
+  .iconDownload {
+    width: 20%;
+    height: 100%;
+  }
+  .iconDownPage {
+    width: 15%;
+    height: 7vh;
+    background-size: contain;
+  }
+  .Cargo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    background: url("imgs/backgrounds/doodles\ mixed\ round.svg") no-repeat
+      center center;
+    background-size: contain;
+  }
+  .cargoImg {
+    background: url("imgs/man/Group\ 2345.svg") no-repeat center center;
+    background-size: contain;
+    width: 100vw;
+    height: 30vh;
+  }
+  /* ---------------------------------------------- */
+
+  /* About Section */
+
+  #About {
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .titleAbout {
+    font-size: 300%;
+    background: url("imgs/backgrounds/lightbulb.svg") no-repeat 80% center;
+    background-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutContainer p {
+    width: 80%;
+    text-indent: 20px;
+    text-align: justify;
+  }
+
+  .aboutMeManImg {
+    background: url("imgs/backgrounds/Component\ 1.svg") no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 50%;
+  }
+
+  /* ---------------------------------------------- */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .headerContainer {
+    width: 100vw;
+    min-height: 20vh;
+    max-height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #393e46;
+  }
+  .logo {
+    background: url("imgs/Logotipo.png") no-repeat center center;
+    background-size: cover;
+
+    width: 50%;
+    height: 100%;
+  }
+
+  .AnchorLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
   }
 }
-@media (min-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Header */
+  .headerContainer {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #393e46;
+  }
+  .logo {
+    background: url("imgs/Logotipo.png") no-repeat center center;
+    background-size: cover;
+
+    width: 40%;
+    height: 100%;
+  }
+
+  .AnchorLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  .AnchorLinks a {
+    width: 15%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.5em;
+    transition: all 0.3s;
+  }
+  .AnchorLinks a:hover {
+    background-color: #393e46;
+    transform: scale(1.05) translateY(-10px);
+  }
+
+  /* ---------------------------------------------- */
+
+  /* Body Section Home */
+
+  #HomeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .HomeContainer {
+    width: 100vw;
+    height: 75vh;
+    min-height: 75vh;
+    max-height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleContainer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: url("imgs/backgrounds/Vector\ 186.svg") no-repeat 30% 75%;
+    background-size: 100px;
+    padding: 40px;
+  }
+  .title {
+    text-align: left;
+    width: auto;
+  }
+
+  .title span {
+    font-size: 250%;
+  }
+
+  .titleButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10%;
+  }
+  .titleButtons a,
+  button {
+    font-size: 120%;
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+
+  .titleButtons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconDownload {
+    width: 20%;
+    height: 100%;
+  }
+  .iconDownPage {
+    width: 100%;
+    height: 7vh;
+    margin-top: 20%;
+    background-size: contain;
+  }
+  .Cargo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    background: url("imgs/backgrounds/doodles\ mixed\ round.svg") no-repeat
+      center center;
+    background-size: contain;
+  }
+  .cargoImg {
+    background: url("imgs/man/Group\ 2345.svg") no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+  }
+  /* ---------------------------------------------- */
+
+  /* About Section */
+
+  #About {
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+  }
+
+  .titleAbout {
+    font-size: 300%;
+    background: url("imgs/backgrounds/lightbulb.svg") no-repeat 90% center;
+    background-size: 50px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .aboutContainer p {
+    width: 80%;
+    text-indent: 0;
+    text-align: start;
+    font-size: 150%;
+  }
+
+  .aboutMeManImg {
+    background: url("imgs/backgrounds/Component\ 1.svg") no-repeat center center;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+  }
+
+  /* ---------------------------------------------- */
 }
-@media (min-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-}
-@media (min-width: 801px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-@media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-}
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .headerContainer {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #393e46;
+  }
+  .logo {
+    background: url("imgs/Logotipo.png") no-repeat center center;
+    background-size: cover;
+
+    width: 25%;
+    height: 100%;
+  }
+
+  .AnchorLinks a {
+    width: 15%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.5em;
+    transition: all 0.3s;
+  }
+  .AnchorLinks a:hover {
+    background-color: #393e46;
+    transform: scale(1.05) translateY(-10px);
+  }
+
+  /* Body Section Home */
+
+  #HomeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .HomeContainer {
+    width: 100vw;
+    height: 75vh;
+    min-height: 75vh;
+    max-height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleContainer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("imgs/backgrounds/Vector\ 186.svg") no-repeat 30% 70%;
+    background-size: 100px;
+    padding: 40px;
+  }
+  .title {
+    text-align: left;
+    width: 80%;
+  }
+
+  .title span {
+    font-size: 250%;
+  }
+
+  .titleButtons {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2%;
+  }
+  .titleButtons a,
+  button {
+    font-size: 90%;
+    padding: 10px;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+
+  .titleButtons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconDownload {
+    width: 20%;
+    height: 100%;
+  }
+  .iconDownPage {
+    width: 100%;
+    height: 7vh;
+    margin-top: 20%;
+    background-size: contain;
+  }
+  .Cargo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    background: url("imgs/backgrounds/doodles\ mixed\ round.svg") no-repeat
+      center center;
+    background-size: contain;
+  }
+  .cargoImg {
+    background: url("imgs/man/Group\ 2345.svg") no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+  }
+  /* ---------------------------------------------- */
+
+  /* About Section */
+
+  #About {
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+  }
+
+  .titleAbout {
+    font-size: 300%;
+    background: url("imgs/backgrounds/lightbulb.svg") no-repeat 90% center;
+    background-size: 50px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .aboutContainer p {
+    width: 80%;
+    text-indent: 0;
+    text-align: start;
+    font-size: 120%;
+    text-align: justify;
+  }
+
+  .aboutMeManImg {
+    background: url("imgs/backgrounds/Component\ 1.svg") no-repeat center center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+  }
+
+  /* ---------------------------------------------- */
 }
 /* Fonts - Poppins */
 
