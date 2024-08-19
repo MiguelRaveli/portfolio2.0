@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #222831;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 header a {
@@ -820,7 +820,7 @@ button {
 
   .titleAbout {
     font-size: 300%;
-    background: url("imgs/backgrounds/lightbulb.svg") no-repeat 90% center;
+    background: url("imgs/backgrounds/lightbulb.svg") no-repeat 80% center;
     background-size: 50px;
     width: 80%;
     text-align: left;
