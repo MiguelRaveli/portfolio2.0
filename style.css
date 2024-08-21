@@ -50,43 +50,6 @@ header a {
   outline: none;
 }
 
-.iconDownload {
-  background: url("./imgs/icons/download.svg") no-repeat center center;
-  transition: all 0.3s;
-}
-.iconSend {
-  background: url("imgs/icons/send.svg") no-repeat center center;
-}
-.iconHome {
-  background: url("imgs/icons/home.svg") no-repeat center center;
-}
-.iconAbout {
-  background: url("imgs/icons/user.svg") no-repeat center center;
-}
-.iconContact {
-  background: url("imgs/icons/phone.svg") no-repeat center center;
-}
-
-.iconDownPage {
-  background: url("./imgs/icons/Frame\ 7.svg") no-repeat center center;
-}
-
-.iconArrow {
-  background: url("imgs/backgrounds/Vector\ 187.svg") no-repeat center center;
-}
-.iconGitHub {
-  background: #eeeeee
-    url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg")
-    no-repeat center center;
-  background-size: contain;
-}
-
-.iconLinkedin {
-  background: #00adb5
-    url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg")
-    no-repeat center center;
-  background-size: contain;
-}
 .line2 {
   background: url("./imgs/backgrounds/Line\ 2.svg") no-repeat center center;
 }
