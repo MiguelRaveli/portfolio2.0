@@ -50,6 +50,43 @@ header a {
   outline: none;
 }
 
+.iconDownload {
+  background: url("imgs/icons/download.svg") no-repeat center center;
+  transition: all 0.3s;
+}
+.iconSend {
+  background: url("imgs/icons/send.svg") no-repeat center center;
+}
+.iconHome {
+  background: url("imgs/icons/home.svg") no-repeat center center;
+}
+.iconAbout {
+  background: url("imgs/icons/user.svg") no-repeat center center;
+}
+.iconContact {
+  background: url("imgs/icons/phone.svg") no-repeat center center;
+}
+
+.iconDownPage {
+  background: url("./imgs/icons/Frame\ 7.svg") no-repeat center center;
+}
+
+.iconArrow {
+  background: url("imgs/backgrounds/Vector\ 187.svg") no-repeat center center;
+}
+.iconGitHub {
+  background: #eeeeee
+    url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+
+.iconLinkedin {
+  background: #00adb5
+    url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg")
+    no-repeat center center;
+  background-size: contain;
+}
 .line2 {
   background: url("./imgs/backgrounds/Line\ 2.svg") no-repeat center center;
 }
@@ -190,6 +227,7 @@ button {
   .iconDownload {
     width: 20%;
     height: 100%;
+    padding: 10px;
   }
   .iconDownPage {
     width: 15%;
@@ -253,6 +291,80 @@ button {
     background-size: contain;
     width: 100%;
     height: 50%;
+  }
+
+  /* ---------------------------------------------- */
+
+  /* My Projects */
+
+  #Projects {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Projects span {
+    font-size: 250%;
+  }
+
+  #Projects h1 {
+    background: url("imgs/backgrounds/Vector\ 141.svg") no-repeat 105% center;
+    background-size: contain;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ContainerProjects {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .project {
+    width: 70%;
+    height: 40vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url("imgs/backgrounds/doodle\ items.svg") no-repeat center
+      center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 50px;
+  }
+
+  .ProjectImg {
+    background: url("https://placehold.co/600x400") no-repeat center center;
+    background-size: cover;
+    width: 70%;
+    height: 70%;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+  }
+
+  .projectButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectButtons a {
+    width: 35%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 110%;
   }
 
   /* ---------------------------------------------- */
@@ -351,6 +463,7 @@ button {
     align-items: center;
   }
   .iconDownload {
+    padding: 10px;
     width: 20%;
     height: 100%;
   }
@@ -416,6 +529,80 @@ button {
     background-size: contain;
     width: 100%;
     height: 50%;
+  }
+
+  /* ---------------------------------------------- */
+
+  /* My Projects */
+
+  #Projects {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Projects span {
+    font-size: 250%;
+  }
+
+  #Projects h1 {
+    background: url("imgs/backgrounds/Vector\ 141.svg") no-repeat 105% center;
+    background-size: contain;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ContainerProjects {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .project {
+    width: 70%;
+    height: 40vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url("imgs/backgrounds/doodle\ items.svg") no-repeat center
+      center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 50px;
+  }
+
+  .ProjectImg {
+    background: url("https://placehold.co/600x400") no-repeat center center;
+    background-size: cover;
+    width: 70%;
+    height: 70%;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+  }
+
+  .projectButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectButtons a {
+    width: 35%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 110%;
   }
 
   /* ---------------------------------------------- */
@@ -631,6 +818,80 @@ button {
   }
 
   /* ---------------------------------------------- */
+
+  /* My Projects */
+
+  #Projects {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url("imgs/backgrounds/doodle\ items.svg") no-repeat center
+      center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 50px 50px #222831;
+  }
+
+  #Projects span {
+    font-size: 250%;
+  }
+
+  #Projects h1 {
+    width: 80%;
+    text-align: left;
+    background: none;
+  }
+
+  .ContainerProjects {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .project {
+    width: calc(100% / 3);
+    height: 40vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    background-color: #393e46da;
+    border-radius: 10px;
+  }
+
+  .ProjectImg {
+    background: url("https://placehold.co/600x400") no-repeat center center;
+    background-size: cover;
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+  }
+
+  .projectButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectButtons a {
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 110%;
+  }
+
+  /* ---------------------------------------------- */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -802,6 +1063,79 @@ button {
     background-size: contain;
     width: 60%;
     height: 60%;
+  }
+
+  /* ---------------------------------------------- */
+  /* My Projects */
+
+  #Projects {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url("imgs/backgrounds/doodle\ items.svg") no-repeat center
+      center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 50px 50px #222831;
+  }
+
+  #Projects span {
+    font-size: 250%;
+  }
+
+  #Projects h1 {
+    width: 80%;
+    text-align: left;
+    background: none;
+  }
+
+  .ContainerProjects {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .project {
+    width: calc(100% / 4);
+    height: 55vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    background-color: #393e46da;
+    border-radius: 10px;
+  }
+
+  .ProjectImg {
+    background: url("https://placehold.co/600x400") no-repeat center center;
+    background-size: cover;
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+  }
+
+  .projectButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectButtons a {
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 110%;
   }
 
   /* ---------------------------------------------- */
