@@ -293,6 +293,15 @@ button {
     height: 50%;
   }
 
+  .iconLanguages {
+    border: solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
   /* ---------------------------------------------- */
 
   /* My Projects */
@@ -367,6 +376,30 @@ button {
     font-size: 110%;
   }
 
+  /* ---------------------------------------------- */
+
+  /* HireMe Section */
+
+  #HireMe {
+    width: 100vw;
+    border: solid;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #HireMe span {
+    font-size: 140%;
+  }
+
+  .aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   /* ---------------------------------------------- */
 }
 
