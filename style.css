@@ -294,12 +294,11 @@ button {
   }
 
   .iconLanguages {
-    border: solid;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 20px;
   }
 
   /* ---------------------------------------------- */
@@ -382,7 +381,6 @@ button {
 
   #HireMe {
     width: 100vw;
-    border: solid;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -391,7 +389,7 @@ button {
   }
 
   #HireMe span {
-    font-size: 140%;
+    font-size: 200%;
   }
 
   .aboutContainer {
@@ -399,6 +397,53 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  section > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .sendAMessage input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #393e46;
+    color: #eeeeee;
+    font-size: 110%;
+    font-family: "Poppins";
+  }
+
+  .sendAMessage label {
+    width: 90%;
+  }
+
+  .sendAMessage textarea {
+    height: 30vh;
+  }
+
+  .sendAMessage button{
+    width: 30vw;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconSend{
+    width: 20%;
+    height: 100%;
+    background-size: contain;
   }
   /* ---------------------------------------------- */
 }
