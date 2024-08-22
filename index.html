@@ -12,6 +12,12 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <header id="Home" class="hidden">
     <div class="headerContainer">
@@ -135,14 +141,16 @@
       <div class="line2"></div>
     </section>
     <section id="HireMe" class="hidden">
-      <h1 class="hireMeTitle poppins-bold">
-        <span class="titleHireMeUp textColorWhite">Eaí, se</span>
-        <span class="titleHireMeUp textColorBlue">interessou?</span>
-      </h1>
-      <div class="sendAMessageText">
-        <span class="textColorWhite poppins-regular">Envie uma mensagem</span>
+      <div class="hireMeTitle">
+        <h1 class="poppins-bold">
+          <span class="titleHireMeUp textColorWhite">Eaí, se</span>
+          <span class="titleHireMeUp textColorBlue">interessou?</span>
+        </h1>
+        <div class="sendAMessageText">
+          <span class="textColorWhite poppins-regular">Envie uma mensagem</span>
+        </div>
+        <div class="hiremeImg"></div>
       </div>
-
       <form id="contact-form" class="textColorWhite sendAMessage poppins-bold">
         <label for="fname">Seu nome</label>
         <input
@@ -171,10 +179,7 @@
           required
         ></textarea>
         <div class="buttonSendContainer">
-          <button
-            class="poppins-bold textColorBlueWithShadow"
-            type="submit"
-          >
+          <button class="poppins-bold textColorBlueWithShadow" type="submit">
             Enviar <span class="iconSend"></span>
           </button>
         </div>
@@ -201,8 +206,8 @@
     </div>
 
     <div class="socialMedias">
-      <a href class="GitHubIcon"></a>
-      <a class="LinkedinIcon"></a>
+      <i class="devicon-github-original"></i>
+      <i class="devicon-linkedin-plain colored"></i>
     </div>
   </footer>
 </html>

@@ -389,14 +389,10 @@ button {
   }
 
   #HireMe span {
-    font-size: 200%;
+    font-size: 150%;
   }
-
-  .aboutContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  #HireMe h1 {
+    padding: 10px;
   }
 
   section > form {
@@ -430,7 +426,7 @@ button {
     height: 30vh;
   }
 
-  .sendAMessage button{
+  .sendAMessage button {
     width: 30vw;
     padding: 5px;
     text-align: center;
@@ -440,11 +436,51 @@ button {
     align-items: center;
   }
 
-  .iconSend{
+  .iconSend {
     width: 20%;
     height: 100%;
     background-size: contain;
   }
+
+  .hireMeTitle {
+    text-align: center;
+  }
+  /* ---------------------------------------------- */
+
+  /* Footer */
+
+  Footer {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .footerAnchorLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footerAnchorLinks a {
+    color: #eeeeee;
+    text-decoration: none;
+  }
+
+  .socialMedias {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .socialMedias i {
+    font-size: 2.5em;
+  }
+
   /* ---------------------------------------------- */
 }
 
@@ -684,6 +720,111 @@ button {
   }
 
   /* ---------------------------------------------- */
+
+  /* HireMe Section */
+
+  #HireMe {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #HireMe span {
+    font-size: 150%;
+  }
+  #HireMe h1 {
+    padding: 10px;
+  }
+
+  section > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .sendAMessage input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #393e46;
+    color: #eeeeee;
+    font-size: 110%;
+    font-family: "Poppins";
+  }
+
+  .sendAMessage label {
+    width: 90%;
+  }
+
+  .sendAMessage textarea {
+    height: 30vh;
+  }
+
+  .sendAMessage button {
+    width: 30vw;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconSend {
+    width: 20%;
+    height: 100%;
+    background-size: contain;
+  }
+  .hireMeTitle {
+    text-align: center;
+  }
+  /* ---------------------------------------------- */
+
+  /* Footer */
+
+  Footer {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .footerAnchorLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footerAnchorLinks a {
+    color: #eeeeee;
+    text-decoration: none;
+  }
+
+  .socialMedias {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .socialMedias i {
+    font-size: 3em;
+  }
+
+  /* ---------------------------------------------- */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -713,6 +854,41 @@ button {
     width: 50%;
     height: 100%;
   }
+
+  /* Footer */
+
+  Footer {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .footerAnchorLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footerAnchorLinks a {
+    color: #eeeeee;
+    text-decoration: none;
+  }
+
+  .socialMedias {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  .socialMedias i {
+    font-size: 3em;
+  }
+
+  /* ---------------------------------------------- */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -970,6 +1146,125 @@ button {
   }
 
   /* ---------------------------------------------- */
+
+  /* HireMe Section */
+
+  #HireMe {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #HireMe span {
+    font-size: 150%;
+  }
+  #HireMe h1 {
+    padding: 10px;
+  }
+
+  section > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    padding: 10px;
+  }
+
+  .sendAMessage input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #393e46;
+    color: #eeeeee;
+    font-size: 110%;
+    font-family: "Poppins";
+  }
+
+  .sendAMessage label {
+    width: 90%;
+  }
+
+  .sendAMessage textarea {
+    height: 30vh;
+  }
+
+  .sendAMessage button {
+    width: 15vw;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconSend {
+    width: 20%;
+    height: 100%;
+    background-size: contain;
+    padding: 15px;
+  }
+
+  .hiremeImg {
+    background: url("imgs/man/Group\ 2372.svg") no-repeat center center;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+  }
+
+  .hireMeTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+    padding: 10px;
+  }
+  /* ---------------------------------------------- */
+  /* Footer */
+
+  Footer {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .footerAnchorLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footerAnchorLinks a {
+    color: #eeeeee;
+    text-decoration: none;
+  }
+
+  .socialMedias {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .socialMedias i {
+    font-size: 3em;
+  }
+
+  /* ---------------------------------------------- */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1216,6 +1511,90 @@ button {
     font-size: 110%;
   }
 
+  /* ---------------------------------------------- */
+
+  /* HireMe Section */
+
+  #HireMe {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #HireMe span {
+    font-size: 150%;
+  }
+  #HireMe h1 {
+    padding: 10px;
+  }
+
+  section > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    padding: 10px;
+  }
+
+  .sendAMessage input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #393e46;
+    color: #eeeeee;
+    font-size: 110%;
+    font-family: "Poppins";
+  }
+
+  .sendAMessage label {
+    width: 90%;
+  }
+
+  .sendAMessage textarea {
+    height: 30vh;
+  }
+
+  .sendAMessage button {
+    width: 10vw;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconSend {
+    width: 20%;
+    height: 100%;
+    background-size: contain;
+    padding: 15px;
+  }
+
+  .hiremeImg {
+    background: url("imgs/man/Group\ 2372.svg") no-repeat center center;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+  }
+
+  .hireMeTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+    padding: 10px;
+  }
   /* ---------------------------------------------- */
 }
 /* Fonts - Poppins */
