@@ -145,7 +145,6 @@ button {
   .logo {
     background: url("imgs/Logotipo.png") no-repeat center center;
     background-size: cover;
-
     width: 70%;
     height: 80%;
   }
@@ -261,6 +260,7 @@ button {
     margin-top: 50px;
     width: 100vw;
     height: 100vh;
+    padding: 10px;
   }
 
   .aboutContainer {
@@ -269,11 +269,11 @@ button {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 50%;
   }
 
   .titleAbout {
-    font-size: 300%;
+    font-size: 200%;
     background: url("imgs/backgrounds/lightbulb.svg") no-repeat 80% center;
     background-size: 50px;
     width: 100%;
@@ -304,6 +304,7 @@ button {
     background-size: contain;
     width: 100%;
     height: 50%;
+    padding: 10px;
   }
 
   /* ---------------------------------------------- */
@@ -312,7 +313,8 @@ button {
 
   #Projects {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -320,7 +322,7 @@ button {
   }
 
   #Projects span {
-    font-size: 250%;
+    font-size: 150%;
   }
 
   #Projects h1 {
@@ -341,7 +343,7 @@ button {
   }
 
   .project {
-    width: 70%;
+    width: 100%;
     height: 40vh;
     padding: 5px;
     display: flex;
@@ -489,7 +491,6 @@ button {
   /* ---------------------------------------------- */
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   /* Header */
   .headerContainer {
@@ -504,8 +505,7 @@ button {
   .logo {
     background: url("imgs/Logotipo.png") no-repeat center center;
     background-size: cover;
-
-    width: 60%;
+    width: 70%;
     height: 80%;
   }
 
@@ -516,6 +516,7 @@ button {
     width: 100%;
     height: 20%;
   }
+
   /* ---------------------------------------------- */
   /* Body Section Home */
 
@@ -525,10 +526,11 @@ button {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height: 75vh;
   }
   .HomeContainer {
     width: 100vw;
-    height: auto;
+    height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -538,11 +540,11 @@ button {
 
   .titleContainer {
     width: 100%;
-    min-height: 40vh;
+    height: 50%;
     max-height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: url("imgs/backgrounds/Vector\ 186.svg") no-repeat 30% 90%;
     background-size: 50px;
@@ -566,9 +568,9 @@ button {
   }
   .titleButtons a,
   button {
-    font-size: 120%;
+    font-size: 100%;
     padding: 10px;
-    width: 35%;
+    width: 30%;
     height: 100%;
     text-align: center;
     align-content: center;
@@ -582,13 +584,13 @@ button {
     align-items: center;
   }
   .iconDownload {
-    padding: 10px;
     width: 20%;
     height: 100%;
+    padding: 10px;
   }
   .iconDownPage {
     width: 15%;
-    height: 7vh;
+    height: 15%;
     background-size: contain;
   }
   .Cargo {
@@ -597,7 +599,7 @@ button {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: auto;
+    height: 50%;
     padding: 10px;
     background: url("imgs/backgrounds/doodles\ mixed\ round.svg") no-repeat
       center center;
@@ -607,7 +609,7 @@ button {
     background: url("imgs/man/Group\ 2345.svg") no-repeat center center;
     background-size: contain;
     width: 100vw;
-    height: 30vh;
+    height: 100%;
   }
   /* ---------------------------------------------- */
 
@@ -617,6 +619,7 @@ button {
     margin-top: 50px;
     width: 100vw;
     height: 100vh;
+    padding: 10px;
   }
 
   .aboutContainer {
@@ -624,23 +627,35 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     width: 100%;
     height: 50%;
   }
 
   .titleAbout {
-    font-size: 300%;
+    font-size: 200%;
     background: url("imgs/backgrounds/lightbulb.svg") no-repeat 80% center;
     background-size: 50px;
     width: 100%;
+    height: 20%;
     text-align: center;
+    align-content: center;
   }
 
   .aboutContainer p {
     width: 80%;
     text-indent: 20px;
     text-align: justify;
+    height: 60%;
+    font-size: 100%;
+  }
+
+  .iconLanguages {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
 
   .aboutMeManImg {
@@ -648,6 +663,7 @@ button {
     background-size: contain;
     width: 100%;
     height: 50%;
+    padding: 10px;
   }
 
   /* ---------------------------------------------- */
@@ -949,7 +965,6 @@ button {
   .HomeContainer {
     width: 100vw;
     height: 75vh;
-    min-height: 75vh;
     max-height: auto;
     padding: 10px;
     display: flex;
@@ -965,7 +980,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    background: url("imgs/backgrounds/Vector\ 186.svg") no-repeat 30% 75%;
+    background: url("imgs/backgrounds/Vector\ 186.svg") no-repeat 30% 85%;
     background-size: 100px;
     padding: 40px;
   }
@@ -1009,8 +1024,8 @@ button {
   }
   .iconDownPage {
     width: 100%;
-    height: 7vh;
-    margin-top: 20%;
+    height: 10%;
+    margin-top: 5%;
     background-size: contain;
   }
   .Cargo {
@@ -1037,6 +1052,7 @@ button {
 
   #About {
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -1058,17 +1074,25 @@ button {
     font-size: 300%;
     background: url("imgs/backgrounds/lightbulb.svg") no-repeat 90% center;
     background-size: 50px;
-    width: 80%;
+    width: 100%;
     text-align: left;
+    height: auto;
+    margin: 0;
   }
 
   .aboutContainer p {
-    width: 80%;
+    width: 100%;
     text-indent: 0;
     text-align: start;
-    font-size: 150%;
+    font-size: 130%;
+    height: auto;
+    margin: 0;
   }
 
+  .iconLanguages {
+    height: auto;
+    margin: 0;
+  }
   .aboutMeManImg {
     background: url("imgs/backgrounds/Component\ 1.svg") no-repeat center center;
     background-size: contain;
@@ -1403,6 +1427,7 @@ button {
 
   #About {
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -1416,31 +1441,38 @@ button {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    width: 40%;
+    width: 50%;
     height: 100%;
   }
 
   .titleAbout {
     font-size: 300%;
-    background: url("imgs/backgrounds/lightbulb.svg") no-repeat 80% center;
+    background: url("imgs/backgrounds/lightbulb.svg") no-repeat 90% center;
     background-size: 50px;
-    width: 80%;
+    width: 70%;
     text-align: left;
+    height: auto;
+    margin: 0;
   }
 
   .aboutContainer p {
-    width: 80%;
+    width: 70%;
     text-indent: 0;
-    text-align: start;
-    font-size: 120%;
     text-align: justify;
+    font-size: 130%;
+    height: auto;
+    margin: 0;
   }
 
+  .iconLanguages {
+    height: auto;
+    margin: 0;
+  }
   .aboutMeManImg {
     background: url("imgs/backgrounds/Component\ 1.svg") no-repeat center center;
     background-size: contain;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 100%;
   }
 
   /* ---------------------------------------------- */
@@ -1457,7 +1489,7 @@ button {
       center;
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: inset 0px 0px 50px 50px #222831;
+    box-shadow: inset 0px 0px 0px 0px #222831;
   }
 
   #Projects span {
@@ -1480,7 +1512,7 @@ button {
   }
 
   .project {
-    width: calc(100% / 4);
+    width: calc(100% / 3.5);
     height: 55vh;
     padding: 5px;
     display: flex;
