@@ -118,7 +118,7 @@ button {
   cursor: pointer;
 }
 
-.titleButtons button:hover {
+.titleButtons a:hover {
   background-color: #eeeeee;
   color: #393e46;
   text-shadow: none;
@@ -126,8 +126,42 @@ button {
   cursor: pointer;
 }
 
-.titleButtons button:hover > .iconDownload {
+.projectButtons a {
+  transition: all 0.3s;
+}
+
+.projectButtons a:hover {
+  background-color: #eeeeee;
+  color: #00adb5;
+  text-shadow: none;
+  transform: scale(1.05) translateY(-10px);
+  cursor: pointer;
+}
+
+.titleButtons a:hover > .iconDownload {
   background: url("imgs/icons/download\ \(1\).svg") no-repeat center center;
+}
+
+.buttonSendContainer button,
+.iconSend {
+  transition: all 0.3s;
+}
+
+.buttonSendContainer button:hover {
+  background-color: #eeeeee;
+  color: #00adb5;
+  text-shadow: none;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.buttonSendContainer button:hover > .iconSend {
+  background: url("imgs/icons/sendblue.svg") no-repeat center center;
+}
+
+.socialMedias a{
+  text-decoration: none;
+  color: white;
 }
 
 /* Extra small devices (phones, 600px and down) */
